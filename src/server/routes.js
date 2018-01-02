@@ -27,6 +27,8 @@ export default (app) =>{
     //Sets header in document
     html.setHeader(<meta key={1} charSet="UTF-8"/>)
     html.setHeader(<title key={2} >ReactLS - Index</title>)
+    html.setHeader(<link key={3} rel="shortcut icon" href="/public/resources/images/favicon.ico" type="image/x-icon"/>)
+    html.setHeader(<link key={4} rel="icon" href="/public/resources/images/favicon.ico" type="image/x-icon"/>)
     //Sending the response with built html
     res.send(html.buildDocument())
   }
@@ -42,6 +44,8 @@ export default (app) =>{
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
         <meta key={1} charSet="UTF-8"/>
         <title>ReactLS - About</title>
+        <link rel="shortcut icon" href="/public/resources/images/favicon.ico" type="image/x-icon"/>
+        <link rel="icon" href="/public/resources/images/favicon.ico" type="image/x-icon"/>
       </head>
     )
     res.send(html.buildDocument())
@@ -55,6 +59,8 @@ export default (app) =>{
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
         <meta key={1} charSet="UTF-8"/>
         <title>ReactLS - Not Found</title>
+        <link rel="shortcut icon" href="/public/resources/images/favicon.ico" type="image/x-icon"/>
+        <link rel="icon" href="/public/resources/images/favicon.ico" type="image/x-icon"/>
       </head>
     )
     res.status(404).send(html.buildDocument())
