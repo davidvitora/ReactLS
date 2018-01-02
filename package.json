@@ -1,6 +1,6 @@
 {
   "name": "reactls",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Template for React server-side rendered apps",
   "main": "build/server",
   "scripts": {
