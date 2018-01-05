@@ -45,6 +45,7 @@ export default class documentBuilder{
 
   //return the string that will be send
   buildDocument(){
+    flush()
     var react_src = "/public/react/" + this.react_id + ".js";
     const app = renderToString( this.Comp )
     const styles = flush()
